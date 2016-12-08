@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15G31" minimumToolsVersion="Xcode 7.0">
+    <entity name="CSDownLoadCourseModel" representedClassName="CSDownLoadCourseModel" syncable="YES">
+        <attribute name="canDownLoad" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="canLearning" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="collectionStatus" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="courseCommentAmmount" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="courseCreateDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="courseDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="courseId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="courseImg" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="courseName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="courseResourceCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="courseSpecialName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="courseSupportAmmount" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="courseType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="examId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="examType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mapId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="projectId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="supportStatus" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="resourceship" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CSDownLoadResourceModel" inverseName="courseship" inverseEntity="CSDownLoadResourceModel" syncable="YES"/>
+    </entity>
+    <entity name="CSDownLoadResourceModel" representedClassName="CSDownLoadResourceModel" syncable="YES">
+        <attribute name="allowDown" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="courseId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="download_type" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="downLoadProgress" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="endDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="modId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="resCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="resId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="resName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="resource" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="resourceContent" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="resourceDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="resourceId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="resourceType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="resourceUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="resourceViewAmount" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="startDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="viewAmount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="courseship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CSDownLoadCourseModel" inverseName="resourceship" inverseEntity="CSDownLoadCourseModel" syncable="YES"/>
+    </entity>
+    <entity name="VideoPlayProgress" syncable="YES">
+        <attribute name="currentTime" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="resId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="CSDownLoadCourseModel" positionX="-54" positionY="-9" width="128" height="328"/>
+        <element name="CSDownLoadResourceModel" positionX="-405" positionY="18" width="128" height="328"/>
+        <element name="VideoPlayProgress" positionX="-243" positionY="9" width="128" height="75"/>
+    </elements>
+</model>

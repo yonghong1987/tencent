@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CSProjectCollectionViewCell"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CSProjectCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="106" height="120"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="106" height="120"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="catalog_default" translatesAutoresizingMaskIntoConstraints="NO" id="dH3-Re-N4J">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="64" id="QNF-Fd-8WT"/>
+                            <constraint firstAttribute="width" constant="64" id="dzf-tI-vB9"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的主题" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="23b-Ft-eTG">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="66" id="2yS-qL-cdw"/>
+                            <constraint firstAttribute="height" constant="32" id="KQl-9j-zND"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_choose" translatesAutoresizingMaskIntoConstraints="NO" id="6pe-fN-85x"/>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="23b-Ft-eTG" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="3l4-2N-r50"/>
+                <constraint firstItem="dH3-Re-N4J" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="12" id="F5a-Oo-BuZ"/>
+                <constraint firstItem="6pe-fN-85x" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="84" id="K8S-p6-qHP"/>
+                <constraint firstItem="23b-Ft-eTG" firstAttribute="top" secondItem="dH3-Re-N4J" secondAttribute="bottom" constant="4" id="Tem-Bi-gvV"/>
+                <constraint firstItem="23b-Ft-eTG" firstAttribute="top" secondItem="dH3-Re-N4J" secondAttribute="bottom" constant="4" id="aTv-4q-Ms7"/>
+                <constraint firstItem="dH3-Re-N4J" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="gGT-Qd-gUw"/>
+                <constraint firstAttribute="bottom" secondItem="23b-Ft-eTG" secondAttribute="bottom" constant="8" id="hdv-zS-a4q"/>
+                <constraint firstItem="6pe-fN-85x" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="3" id="knc-mc-hJX"/>
+            </constraints>
+            <connections>
+                <outlet property="choiceMarkImg" destination="6pe-fN-85x" id="nyh-3K-UV1"/>
+                <outlet property="projectImg" destination="dH3-Re-N4J" id="1IY-3X-Un3"/>
+                <outlet property="projectName" destination="23b-Ft-eTG" id="CbX-Gw-Rlb"/>
+            </connections>
+            <point key="canvasLocation" x="452" y="314"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="catalog_default" width="84" height="84"/>
+        <image name="icon_choose" width="16" height="16"/>
+    </resources>
+</document>

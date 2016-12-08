@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11232" systemVersion="15G31" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="TencentCourseDetail" representedClassName="TencentCourseDetail" syncable="YES">
+        <attribute name="courseId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="jsonData" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="projectId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <entity name="VedioPlayProgress" representedClassName="VedioPlayProgress" syncable="YES">
+        <attribute name="playProgress" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="resourceUrl" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="TencentCourseDetail" positionX="-63" positionY="-18" width="128" height="105"/>
+        <element name="VedioPlayProgress" positionX="-63" positionY="9" width="128" height="75"/>
+    </elements>
+</model>

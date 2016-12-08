@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "1dfb0ea7-080a-b344-85d5-cc2b07bb9408++4671",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "1dfb0ea7-080a-b344-85d5-cc2b07bb9408++4671" : {
+      "DVTSourceControlWorkingCopyRepositoryPrimaryBranchLocationKey" : "branches\/tencent\/trunk"
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "1dfb0ea7-080a-b344-85d5-cc2b07bb9408++4671" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "4EA2FAB3-FBD9-4A4D-89DD-AB109A465920",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "1dfb0ea7-080a-b344-85d5-cc2b07bb9408++4671" : "tencent--1014\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "tencent",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "tencent.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/kaven.chen@223.202.3.234:81\/svn\/sunmobile-IOS",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1dfb0ea7-080a-b344-85d5-cc2b07bb9408++4671"
+    }
+  ]
+}
